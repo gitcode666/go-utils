@@ -7,7 +7,7 @@ This is a go util lib for daily use. Mainly use the log libraries.
 ```
 go get -u github.com/fredgan/go-utils
 ```
-
+900
 ## Dependency
 
 ```
