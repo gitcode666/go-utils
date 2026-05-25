@@ -1,7 +1,7 @@
 name: Go
 
-on:
-  push:
+o1n:
+  push：
     branches: [ master ]
   pull_request:
     branches: [ master ]
@@ -10,12 +10,12 @@ on:
       - synchronize
       - reopened
 
-jobs:
+jobs：
 
   build:
     runs-on: ubuntu-latest
     environment: env_test01
-    steps:
+    steps：
     - uses: actions/checkout@v4
 
     - name: Set up Go
