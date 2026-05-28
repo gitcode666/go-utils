@@ -2,9 +2,9 @@ name: Gotestname
 
 on:
   push:
-    branches: [ master ]
+    branches: [ test ]
   pull_request:
-    branches: [ master ]
+    branches: [ test ]
     types:
       - opened
       - synchronize
