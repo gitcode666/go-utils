@@ -3,7 +3,7 @@
 This is a go util lib for daily use. Mainly use the log libraries.
 
 ## Usage
-
+123
 ```
 go get -u github.com/fredgan/go-utils
 ```
