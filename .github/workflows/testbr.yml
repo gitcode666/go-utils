@@ -1,7 +1,7 @@
-name: Gotest
+name: Gotestname
 
-o1n:
-  push：
+on:
+  push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
@@ -10,12 +10,12 @@ o1n:
       - synchronize
       - reopened
 
-jobs：
+jobs:
 
   build:
     runs-on: ubuntu-latest
     environment: env_test01
-    steps：
+    steps:
     - uses: actions/checkout@v4
 
     - name: Set up Go
@@ -28,6 +28,9 @@ jobs：
 
     - name: Test
       run: go test -v ./...
+
+    - name: test head
+      run: echo "head ${{ github.event.pull_request.head.sha }}"
     
     - name: echo
       run: echo ${{vars.VAR_TEST01}}
